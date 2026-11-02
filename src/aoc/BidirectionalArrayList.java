@@ -1,10 +1,7 @@
-import java.util.ArrayList;
-import java.util.Iterator;
+package aoc;
 
-interface BidirectionalIterator<E> extends Iterator<E> {
-    boolean hasPrevious();
-    E previous();
-}
+import java.util.ArrayList;
+
 /**
  * An extension of ArrayList that acts as a factory for a bidirectional iterator.
  */
@@ -22,7 +19,7 @@ public class BidirectionalArrayList<E> extends ArrayList<E> {
 
     /**
      * Private inner class encapsulating the iteration state.
-     * It holds an implicit reference to the enclosing BidirectionalArrayList instance.
+     * It holds an implicit reference to the enclosing aoc.BidirectionalArrayList instance.
      */
     private class CustomBiDirIterator implements BidirectionalIterator<E> {
 
