@@ -1,4 +1,4 @@
-package aoc;
+package aoc.collections;
 
 import java.util.Iterator;
 

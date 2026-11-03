@@ -1,4 +1,4 @@
-package aoc;
+package aoc.collections;
 
 import java.util.ArrayList;
 
@@ -19,7 +19,7 @@ public class BidirectionalArrayList<E> extends ArrayList<E> {
 
     /**
      * Private inner class encapsulating the iteration state.
-     * It holds an implicit reference to the enclosing aoc.BidirectionalArrayList instance.
+     * It holds an implicit reference to the enclosing aoc.collections.BidirectionalArrayList instance.
      */
     private class CustomBiDirIterator implements BidirectionalIterator<E> {
 
